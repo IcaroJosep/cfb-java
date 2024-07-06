@@ -14,9 +14,17 @@ public class Principal {
  * 
  * */
 	public static void main(String[] args) {
-	
+		Jogador j1 = new Jogador();
+		Jogador j2 = new Jogador();
 		
+	/* akiu vemos q mesmo o j1 sendo atribuido (icaro)
+	 * pela variavel ser statica quando a atribuimos como
+	 * (josep) na j2 alteramos junto a variavel em j1 .
+	 * assim inprimeindo nome de j1 como josep. */	
+		j1.nome="icaro";
+		j2.nome="josep";
 		
+		System.out.print(j1.nome);
 		
 		
 	}
