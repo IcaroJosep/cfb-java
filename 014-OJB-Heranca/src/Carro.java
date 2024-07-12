@@ -33,9 +33,14 @@ public class Carro {
 	public int getBlindagem() {
 		return blindagem;
 	}
-
+	public void setBlindado(int i) {
+		this.blindagem=i;
+	}
 	public Boolean getArmado() {
 		return armado;
+	}
+	public void setArmado(boolean i) {
+		this.armado=i;
 	}
 	
 	public void sofrerDano(int dano) {
@@ -48,12 +53,12 @@ public class Carro {
 	}
 	
 	public void info() {
-		System.out.println("-------------------------");
-		System.out.printf("nome.........:%s",this.nome);
-		System.out.printf("nome.........:%s",this.ligado);
-		System.out.printf("nome.........:%s",this.destruido);
-		System.out.printf("nome.........:%s",this.blindagem);
-		System.out.printf("nome.........:%s",this.armado);
+		System.out.println("\n-------------------------");
+		System.out.printf("\nnome.........:%s",this.nome);
+		System.out.printf("\nmotor esta...:%s",this.ligado?"ligado":"desligado");
+		System.out.printf("\nnome.........:%s",this.destruido?"destruido":"funcionando");
+		System.out.printf("\nbindagem.....:%d",this.blindagem);
+		System.out.printf("\nmilitar......:%s",this.armado?"sim":"nao");
 	}
 }
 
