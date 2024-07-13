@@ -2,9 +2,10 @@
 public class Principal {
 
 	public static void main(String[] args) {
-		Aviao a1 =new Aviao();
-		a1.setNome("sd");
-		System.out.printf(a1.getNome());
+		
+		Aviao v1 =new Aviao("aviator", 3);
+		
+		v1.info();
 	}
 
 }

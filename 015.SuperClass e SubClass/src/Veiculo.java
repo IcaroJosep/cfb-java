@@ -2,17 +2,15 @@
 public class Veiculo {
 	private String nome;
 	private int tipo;
-	protected String getNome() {
-		return nome;
+	
+	protected Veiculo(String nome, int tipo) {
+		 this.nome=nome;
+		 this.tipo=tipo;
 	}
-	protected void setNome(String nome) {
-		this.nome = nome;
+	protected void info() {
+		System.out.printf("nome:%s\n",this.nome);
+		System.out.printf("Tipo:%d\n",this.tipo);
 	}
-	protected int getTipo() {
-		return tipo;
-	}
-	protected void setTipo(int tipo) {
-		this.tipo = tipo;
-	}
+	
 
 }
