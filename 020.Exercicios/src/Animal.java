@@ -7,6 +7,7 @@ public abstract class Animal implements SerVivo {
 	private int forca;
 	
 	public Animal(int vel,int massa,int forca){
+		this.vel=vel;
 		this.vivo = true;
 		this.massa = massa;
 		this.x=0;
@@ -22,7 +23,7 @@ public abstract class Animal implements SerVivo {
 		return this.vivo;
 	}
 /////////FORÇA/////////////	
-	public void setFoca(int forca) {
+	public void setForca(int forca) {
 		this.forca=forca;
 	}
 	public int getForca() {
@@ -52,9 +53,9 @@ public abstract class Animal implements SerVivo {
 ////////ATACAR/////////////////
  	public void atacar(Animal a) {
  		if(this.vivo) {
- 			if(this.forca>a.forca) {
- 				this.forca+=a.massa;
- 				a.vivo=false;
+ 			if(this.forca>a.getForca()) {
+ 				this.forca+=a.getMassa();
+ 				a.setVivo(false);
  			}else {
  				this.vivo=false;
  			}
@@ -78,9 +79,15 @@ public abstract class Animal implements SerVivo {
  		}
 	}
 
-	///////////////
+///////////INFO/////////////	
+
 	public void info() {
-		
+		 System.out.println("\n----------------------------");
+		 System.out.printf("\ntipo......:%s",getClass().toString());
+		 System.out.printf("\nvivo......:%s",vivo?"sim":"nao");
+		 System.out.printf("\nmassa.....:%d",massa);
+		 System.out.printf("\nvelocidade:%d",vel);
+		 System.out.printf("\nforça.....:%d",forca);	 
 	}
 	
 }
