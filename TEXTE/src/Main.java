@@ -1,5 +1,7 @@
 import java.io.IOException;
 
+import sun.net.www.content.text.plain;
+
 public class Main {
  
   public static void main(String[] args) throws IOException, ClassNotFoundException {
@@ -18,6 +20,8 @@ public class Main {
     Tree1.carregarArvore(); // Carrega a árvore de um arquivo
     
     Tree1.imprimirEmOrdem();
+  
+   System.out.println(Tree1);
   }
   
 }
