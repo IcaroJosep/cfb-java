@@ -15,9 +15,6 @@ public class Main {
 			}
 		}
 		
-		
-		
-		
 		for(int[] l:numeros) {
 			for(int c:l) {
 				System.out.print(c + " ");
