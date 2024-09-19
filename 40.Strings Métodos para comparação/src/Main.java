@@ -68,5 +68,5 @@ public class Main {
 			System.out.println("iguais");
 		}
 		
-	}s
+	}
 }
