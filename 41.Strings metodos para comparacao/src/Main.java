@@ -26,7 +26,7 @@ public class Main {
 		System.out.printf("texte com substring :\n%s\n\n",s1.substring(4,18));
 		
 		
-//concat
+//concatasdasd
 		/*junta duas strings*/
 		String s2=" - youtube";
 		System.out.println("teste com concat:");
