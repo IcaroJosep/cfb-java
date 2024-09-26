@@ -1,7 +1,24 @@
 import java.util.*;
 import java.util.Map.Entry;
-
-
+/*
+* 		Como funciona?
+* 
+*Função Hash: Quando você adiciona um par chave-valor a um HashMap, a chave é passada por uma função hash. Essa função gera um número inteiro, chamado de código hash.
+*
+*Índice do Array: O código hash é usado para calcular o índice do array onde o valor será armazenado.
+*
+*Colisões: Se duas chaves diferentes gerarem o mesmo índice (colisão), o HashMap geralmente utiliza uma lista encadeada para armazenar os pares chave-valor nesse índice.
+*
+*		Características principais:
+*
+*Não ordenado: A ordem dos elementos em um HashMap não é garantida e pode mudar ao longo do tempo.
+*
+*Chaves únicas: Cada chave deve ser única dentro do HashMap. Se você tentar adicionar uma chave duplicada, o valor associado será substituído.
+*
+*Permite valores nulos: Tanto a chave quanto o valor podem ser nulos, mas apenas uma vez cada.
+*
+*Não sincronizado: HashMap não é thread-safe. Se você precisar de um HashMap seguro para multithreading, use ConcurrentHashMap.
+*/
 public class Main {
 /*coleçao HashMap
  * Esta colecao faz uso de chave valor
