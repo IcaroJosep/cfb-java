@@ -26,8 +26,7 @@ public class Main {
 		
 		ArrayList<Integer> valores = new ArrayList<>(); 
 		ArrayList<Integer> dobro = new ArrayList<>(); 
-		ArrayList<Integer> par = new ArrayList<>(); 
-		ArrayList<Integer> impar = new ArrayList<>(); 
+		
 		
 		valores.add(1);
 		valores.add(2);
@@ -46,11 +45,39 @@ public class Main {
 		
 		System.out.println(valores);
 		System.out.println(dobro);
-		System.out.println(par);
-		System.out.println(impar);
 		
 		
 		
+/*No seu código, você está utilizando o método forEach da classe ArrayList.
+ *Esse método aceita um argumento que é uma instância de uma interface funcional chamada
+ *Consumer<T>. A interface Consumer<T> tem um único método abstrato accept(T t),
+ *que é exatamente o que uma expressão lambda pode implementar.
+
+
+Aqui está uma explicação detalhada:
+
+Interface Funcional Consumer<T>:
+A interface Consumer<T> faz parte do pacote java.util.function e é uma interface
+funcional porque tem apenas um método abstrato: accept(T t).
+A assinatura do método é void accept(T t);.
+
+Uso do forEach:
+O método forEach da classe ArrayList aceita um Consumer<T> como argumento.
+
+No seu código, a expressão lambda (v) -> { dobro.add(v * 2); }
+é passada como argumento para o forEach.
+
+Expressão Lambda:
+A expressão lambda (v) -> { dobro.add(v * 2); } implementa o método
+accept da interface Consumer<Integer>.
+Aqui, v é o parâmetro que representa cada elemento da lista valores.
+
+O corpo da lambda { dobro.add(v * 2); }
+é executado para cada elemento v da lista valores.
+Então, o forEach usa a interface funcional Consumer<T> para aplicar 
+a operação definida na expressão lambda a cada elemento da lista valores.
+
+*/		
 
 		
 		
